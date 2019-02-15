@@ -110,12 +110,16 @@ h1 {
 
 
 .companylogo {
-    background-size:100% 100%;  
-    background-repeat: no-repeat
-    /* padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;     */
+    /* background-position-x: .5rem;
+    background-position-y: .5rem; */
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding-top: .1rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;     
+    text-align: center;
+    margin: 1em 0;
 }
 .companylogo1 {
      padding-top: 5px;
@@ -132,8 +136,12 @@ div.companydetails{
 }
 div.duration{
     text-align: center;
-    font-weight: bold;  
 }
 div.location{
     text-align: center;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

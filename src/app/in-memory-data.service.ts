@@ -30,7 +30,7 @@ export class InMemoryDataService implements InMemoryDbService {
         duration:'October 2014 to March 2016', 
         position: 'Lead Developer',
         country: "UK", countryUrl:'../../assets/images/flags/uk.jpg' },
-        { id: 3, companyUrl:'../../assets/images/company/fsi.jpg', 
+        { id: 3, companyUrl:'../../assets/images/company/FSI.jpg', 
         company: 'First Sports International', 
         duration:'September 2013 to October 2014', 
         position: 'Lead Developer',

@@ -20,6 +20,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ExperienceDetailComponent } from './experience-detail/experience-detail.component';
 import { PrintViewerComponent } from './print-viewer/print-viewer.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     CertificationsComponent,
     ExperienceComponent,
     ExperienceDetailComponent,
-    PrintViewerComponent
+    PrintViewerComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
