@@ -36,8 +36,8 @@ h1 {
 }
 
 .sidebar-social {
-    margin: 10;
-    padding: 10;
+    margin: 20;
+    padding: 0;
 }
 
 .sidebar-social ul {
@@ -52,7 +52,7 @@ h1 {
     background-color: #fff;
     border: 1px solid #eee;
     display: inline-block;
-    font-size: 10px;
+    font-size: 20px;
     padding:0;
 }
 

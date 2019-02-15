@@ -8,11 +8,13 @@ import { CertificationsComponent} from './certifications/certifications.componen
 import { ExperienceDetailComponent} from './experience-detail/experience-detail.component';
 import { ExperienceComponent} from './experience/experience.component';
 import { PrintViewerComponent } from './print-viewer/print-viewer.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes : Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path:'heroes', component:HeroesComponent},
-  { path: 'detail/:id', component: HeroDetailComponent},
+  { path:'profile', component:ProfileComponent},
+  { path:'detail/:id', component: HeroDetailComponent},
   { path:'dashboard', component:DashboardComponent},
   { path:'skills', component:SkillsComponent},
   { path:'certifications', component:CertificationsComponent},

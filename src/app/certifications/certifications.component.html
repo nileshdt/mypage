@@ -3,13 +3,13 @@
     <!-- logo -->
     <div class="container-fluid">
       <a class="navbar-item">
-        <img src="assets/images/certifications/awsasso.jpg">
+        <img src="assets/images/certifications/awsasso.jpg" [routerLink]="['/printViewer/','/assets/pdf/aws.pdf']">
       </a>
       <a class="navbar-item">
-        <img src="assets/images/certifications/mcpd.png" [routerLink]="['/printViewer/','/assets/pdf/Microsoft.pdf']" (click)="showFile('/assets/pdf/Microsoft.pdf')">
+        <img src="assets/images/certifications/mcpd.png" [routerLink]="['/printViewer/','/assets/pdf/mcpd.pdf']" >
       </a>
-      <a class="navbar-item" href=" window.open('assets/pdf/Microsoft.pdf');" target="_blank">
-          <img src="assets/images/certifications/msts.png">
+      <a class="navbar-item" >
+          <img src="assets/images/certifications/msts.png" [routerLink]="['/printViewer/','/assets/pdf/mcts.pdf']">
         </a>
       </div>
   </nav>
