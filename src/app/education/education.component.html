@@ -1,0 +1,17 @@
+<div class="row experience" *ngFor="let ed of education">
+    <!-- <div class="col-md-3 companylogo" [ngStyle]="{'background-image': 'url(' +experience.companyUrl+')'}">
+    </div> -->
+<div class="col-md-2 companylogo" >
+    <span class="helper"></span>
+    <img src="{{ed.url}}" style="height:10rem;width:10rem;max-width: 100%;"  >
+</div>
+<div class="col-md-3 companydetails" > 
+    <p> <b>{{ed.university}}</b></p> 
+</div> 
+<div class="col-md-2"><b>{{ed.course}}</b></div>
+<div class="duration col-md-3" > <b>{{ed.subject}} </b>
+</div>
+ <div class="col-md-1">
+  <a class="" routerLink="/educationDetail/{{ed.id}}"><i class="fa fa-info-circle fa-2x"></i><span>Details</span></a>
+</div> 
+</div>

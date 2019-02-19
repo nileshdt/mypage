@@ -19,6 +19,7 @@ export class ExperienceComponent implements OnInit {
     
     this.experienceService.getExperiences()
     .subscribe( experiences => this.experiences =  experiences)
+    console.log("ExperienceComponent :: getExperiences" + this.experiences)
   }
 
 }

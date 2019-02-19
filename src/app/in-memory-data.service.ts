@@ -30,12 +30,12 @@ export class InMemoryDataService implements InMemoryDbService {
         duration:'October 2014 to March 2016', 
         position: 'Lead Developer',
         country: "UK", countryUrl:'../../assets/images/flags/uk.jpg' },
-        { id: 3, companyUrl:'../../assets/images/company/FSI.jpg', 
+        { id: 3, companyUrl:'../../assets/images/company/fsi.png', 
         company: 'First Sports International', 
         duration:'September 2013 to October 2014', 
         position: 'Lead Developer',
         country: "UK", countryUrl:'../../assets/images/flags/uk.jpg' },
-        { id: 4, companyUrl:'../../assets/images/company/RBI.jpg', 
+        { id: 4, companyUrl:'../../assets/images/company/rbi.png', 
         company: 'Reed Business Information', 
         duration:'November 2012 to August 2013', 
         position: 'Senior Developer',
@@ -66,7 +66,33 @@ export class InMemoryDataService implements InMemoryDbService {
         position: 'Senior Developer/ Team Lead',
         country: "India", countryUrl:'../../assets/images/flags/india.jpg' }
     ];
-    return {heroes,experiences};
+    const educations = [
+      { id: 1, name: 'KSOU', university:'Karnataka State Open University', 
+        course:'Master of Science', 
+        subject: 'Information Technology',
+        duration:'', 
+        location:'Mumbai, India', 
+        url:'../../assets/images/education/ksou.jpg',
+        wesUrl:'../../assets/pdf/wes.pdf'
+       },
+       { id: 2, name: 'NIIT', university:'National Institution of Information Technology', 
+       course:'Diploma in Information Technology', 
+       subject: 'Information Technology',
+       duration:'', 
+       location:'Mumbai, India', 
+       url:'../../assets/images/education/niit.png',
+       wesUrl:''
+      },
+      { id: 3, name: 'Mumbai', university:'University of Mumbai', 
+        course:'Bachelor of Commerce', 
+        subject: 'Accounting',
+        duration:'', 
+        location:'Bangalore, India', 
+        url:'../../assets/images/education/mumbai.jpg',
+        wesUrl:'../../assets/pdf/wes.pdf'
+       },
+    ];
+    return {heroes,experiences, educations};
   }
     // Overrides the genId method to ensure that a hero always has an id.
   // If the heroes array is empty,

@@ -1,19 +1,20 @@
     <div class="row experience" *ngFor="let experience of experiences">
             <!-- <div class="col-md-3 companylogo" [ngStyle]="{'background-image': 'url(' +experience.companyUrl+')'}">
             </div> -->
-            <div class="col-md-3 companylogo" >
-                <span class="helper"></span>
-                <img src="{{experience.companyUrl}}" style="height:10rem;width:10rem;max-width: 100%;"  >
-            </div>
+        <div class="col-md-2 companylogo" >
+            <span class="helper"></span>
+            <img src="{{experience.companyUrl}}" style="height:10rem;width:10rem;max-width: 100%;"  >
+        </div>
         <div class="col-md-3 companydetails" > 
             <p> <b>{{experience.company}}</b></p> 
+        </div> 
+        <div class="col-md-2"><b>{{experience.position}}</b></div>
+        <div class="duration col-md-3" > <b>{{experience.duration}} </b>
         </div>
-        <div class="duration col-md-2" > <b>{{experience.duration}} </b>
+        <div class="location col-md-1" > <b>{{experience.country}}</b><img src="{{experience.countryUrl}}" class="country" > 
         </div>
-        <div class="location col-md-2" > <b>{{experience.country}}</b><img src="{{experience.countryUrl}}" class="country" > 
-        </div>
-        <div class="col-md-2">
+         <div class="col-md-1">
           <a class="" routerLink="/experienceDetail/{{experience.id}}"><i class="fa fa-info-circle fa-2x"></i><span>Details</span></a>
-        </div>
+        </div> 
     </div>
   

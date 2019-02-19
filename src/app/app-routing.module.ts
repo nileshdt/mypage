@@ -9,7 +9,7 @@ import { ExperienceDetailComponent} from './experience-detail/experience-detail.
 import { ExperienceComponent} from './experience/experience.component';
 import { PrintViewerComponent } from './print-viewer/print-viewer.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { EducationComponent} from './education/education.component';
 const routes : Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path:'heroes', component:HeroesComponent},
@@ -20,7 +20,8 @@ const routes : Routes = [
   { path:'certifications', component:CertificationsComponent},
   { path:'experience', component:ExperienceComponent},
   { path:'experienceDetail/:id', component:ExperienceDetailComponent},
-  { path:'printViewer/:url', component:PrintViewerComponent}
+  { path:'printViewer/:url', component:PrintViewerComponent},
+  { path:'education', component:EducationComponent},
 ]
 @NgModule({
   imports:[RouterModule.forRoot(routes)],

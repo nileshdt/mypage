@@ -21,6 +21,7 @@ import { ExperienceDetailComponent } from './experience-detail/experience-detail
 import { PrintViewerComponent } from './print-viewer/print-viewer.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ProfileComponent } from './profile/profile.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ProfileComponent } from './profile/profile.component';
     ExperienceComponent,
     ExperienceDetailComponent,
     PrintViewerComponent,
-    ProfileComponent
+    ProfileComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

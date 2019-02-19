@@ -5,7 +5,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 import { MessageService } from './message.service';
 
-import {Experience} from './experience'
+import { Education } from './education'
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -14,39 +14,40 @@ const httpOptions = {
   providedIn: 'root'
 })
 
-export class ExperienceService {
-  private heroesUrl = 'api/experiences';  // URL to web api
+export class EducationService {
+  private heroesUrl = 'api/educations';  // URL to web api
 
   constructor( private http: HttpClient,
           private messageService : MessageService) { }
           
-  getExperiences () : Observable<Experience[]> {
+  getEducations () : Observable<Education[]> {
+    console.log("EducationService :: getEducations")
     //this.messageService.add('HeroSevices : fetched heroes') ;
     //return of( HEROES );
-    return this.http.get<Experience[]>(this.heroesUrl)
+    return this.http.get<Education[]>(this.heroesUrl)
     .pipe( 
-      tap( _ => this.log('fetched Experience')),
-      catchError(this.handleError('getExperience', []))
+      tap( _ => this.log('fetched Education')),
+      catchError(this.handleError('getEducation', []))
 
     );
   }
-  getExperienceNo404<Data>(id: number): Observable<Experience> {
+  getEducationNo404<Data>(id: number): Observable<Education> {
     const url = `${this.heroesUrl}/?id=${id}`;
-    return this.http.get<Experience[]>(url)
+    return this.http.get<Education[]>(url)
       .pipe(
         map(heroes => heroes[0]), // returns a {0|1} element array
         tap(h => {
           const outcome = h ? `fetched` : `did not find`;
-          this.log(`${outcome} Experience id=${id}`);
+          this.log(`${outcome} Education id=${id}`);
         }),
-        catchError(this.handleError<Experience>(`getExperience id=${id}`))
+        catchError(this.handleError<Education>(`getEducation id=${id}`))
       );
   }
-  getExperience( id : number) : Observable<Experience> {
+  getEducation( id : number) : Observable<Education> {
     const url = `${this.heroesUrl}/${id}`
-    return this.http.get<Experience>(url).pipe(
+    return this.http.get<Education>(url).pipe(
       tap(_ => this.log(`fewtched Experience id=${id}`)),
-      catchError( this.handleError<Experience>(`getExperience id=${id}`))
+      catchError( this.handleError<Education>(`getEducation id=${id}`))
     )
   }
   private log(message: string) {
