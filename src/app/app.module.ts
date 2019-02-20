@@ -22,6 +22,10 @@ import { PrintViewerComponent } from './print-viewer/print-viewer.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ProfileComponent } from './profile/profile.component';
 import { EducationComponent } from './education/education.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NavigationComponent } from './education/navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { EducationComponent } from './education/education.component';
     ExperienceDetailComponent,
     PrintViewerComponent,
     ProfileComponent,
-    EducationComponent
+    EducationComponent,
+    PageNotFoundComponent,
+    NavigationComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +62,6 @@ import { EducationComponent } from './education/education.component';
 )
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,NavigationComponent]
 })
 export class AppModule { }

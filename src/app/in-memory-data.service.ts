@@ -71,6 +71,7 @@ export class InMemoryDataService implements InMemoryDbService {
         course:'Master of Science', 
         subject: 'Information Technology',
         duration:'', 
+        detailCaption:'Wes Details', 
         location:'Mumbai, India', 
         url:'../../assets/images/education/ksou.jpg',
         wesUrl:'../../assets/pdf/wes.pdf'
@@ -79,6 +80,7 @@ export class InMemoryDataService implements InMemoryDbService {
        course:'Diploma in Information Technology', 
        subject: 'Information Technology',
        duration:'', 
+       detailCaption:'Details', 
        location:'Mumbai, India', 
        url:'../../assets/images/education/niit.png',
        wesUrl:''
@@ -87,6 +89,7 @@ export class InMemoryDataService implements InMemoryDbService {
         course:'Bachelor of Commerce', 
         subject: 'Accounting',
         duration:'', 
+        detailCaption:'Wes Details', 
         location:'Bangalore, India', 
         url:'../../assets/images/education/mumbai.jpg',
         wesUrl:'../../assets/pdf/wes.pdf'
