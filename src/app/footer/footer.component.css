@@ -1,0 +1,41 @@
+.social-link {
+    display: inline;
+    padding-right: 30px
+}
+
+.social li {
+    display: inline;
+    padding-right: 30px;
+}
+.social ul {
+    list-style: none;
+    padding: 0;
+}
+.social-link a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+.navbar a, .social-link a {
+    color: #fff;
+    font-size: 12px;
+}
+a:hover {
+    text-decoration: none;
+}
+.link-animation {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+@media screen and (min-width: 992px){
+.link-animation:hover::after {
+    width: 100%;
+}}
+@media screen and (min-width: 992px){
+.link-animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #eba300;
+    transition: width 0.3s;
+}}

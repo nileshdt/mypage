@@ -1,0 +1,64 @@
+a:hover {
+    text-decoration: none;
+} 
+.link-animation {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+@media screen and (min-width: 992px){
+.link-animation:hover::after {
+    width: 100%;
+}}
+@media screen and (min-width: 992px){
+.link-animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #eba300;
+    transition: width 0.3s;
+}}
+
+@-webkit-keyframes pulse {
+    25% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    75% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  }
+  
+  @keyframes pulse {
+    25% {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    75% {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+  }
+  
+  .pulse {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  
+  .pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }

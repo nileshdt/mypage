@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 h1 {
-    color: #369;
+    color: rgb(196, 211, 226);
     font-family:  'Poppins', sans-serif;
     font-size: 250%;
+    letter-spacing: 1px;
+    font-weight: 600;
   }
   h2, h3 {
     color: #444;
@@ -10,7 +12,7 @@ h1 {
     font-weight: lighter;
   }
   body {
-    font-family: Poppins, sans-serif  ;
+    font-family: 'Poppins', sans-serif  ;
     margin: 2em;
     background-color: #191919;
   }
@@ -22,6 +24,9 @@ h1 {
   * {
     font-family: 'Poppins', sans-serif;
   }
+  a {
+    cursor: pointer;
+    }
 .main-wrap {
     min-height: 300px;
     /*color: #777777;  */
@@ -31,6 +36,16 @@ h1 {
     line-height:21px;
     background:url("assets/images/home-banner.jpg") no-repeat #2a4c66;
     background-position: right;
+}
+.left {
+    text-align: left;
+    padding-top: 40%;
+}
+.root{
+    padding-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+
 }
 .jtron {
     background:url("assets/images/home-banner.jpg") no-repeat #2a4c66;
@@ -42,10 +57,12 @@ h1 {
     height: 200px;
     /* line-height: 200px; */
     text-align: center;
-    border: 2px solid  #777471;
 }
-
-
+/* @media screen and (min-width: 768px){
+.left {
+    padding-top: 0;
+    }
+} */
 .companylogo {
     /* background-position-x: .5rem;
     background-position-y: .5rem; */
@@ -182,16 +199,19 @@ div.location{
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
-.social-link {
-    display: inline;
-    padding-right: 30px
-}
 
-.social li {
-    display: inline;
-    padding-right: 30px;
-}
-.social ul {
-    list-style: none;
-    padding: 0;
-}
+.grow {
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    -ms-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+  }
+  
+  .grow:hover {
+    -webkit-transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -ms-transform:scale(1.3);
+    -o-transform:scale(1.3);
+    transform:scale(1.3);
+  }
