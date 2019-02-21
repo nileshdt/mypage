@@ -11,6 +11,11 @@ h1 {
     font-family:  'Poppins', sans-serif;
     font-weight: lighter;
   }
+  .title{
+    font-family: 'Poppins', sans-serif  ;
+    font-weight: 600;
+    font-size: 150%;
+  }
   body {
     font-family: 'Poppins', sans-serif  ;
     margin: 2em;
@@ -51,6 +56,9 @@ h1 {
 }
 .pad-left-10 {
     padding-left: 10%;
+}
+.pad-left-20 {
+    padding-left: 20%;
 }
 
 .left {
