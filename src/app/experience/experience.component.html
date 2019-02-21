@@ -1,31 +1,22 @@
+<div  class="experience pad-top-10">
+    <h1>Experience</h1>
     <div class="row" *ngFor="let experience of experiences">
             <!-- <div class="col-md-3 companylogo" [ngStyle]="{'background-image': 'url(' +experience.companyUrl+')'}">
             </div> -->
-        <!-- <div class="col-md-2 companylogo" >
+        <div class="col-md-2 companylogo" >
             <span class="helper"></span>
-            <img src="{{experience.companyUrl}}" style="height:10rem;width:10rem;max-width: 100%;"  >
-        </div> -->
-        <div class="col-md-2 " >
-                <a href="vig.html">
-                        <div class="project-img-container">
-                            <div class="project-img vig-project-img animated fadeIn fast" style="transform: rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) perspective(0px);">
-                                <div class="highlight" style="background: linear-gradient(-76.1593deg, rgba(250, 250, 250, 0.18) 0%, rgba(250, 250, 250, 0) 60%);"></div>
-                            </div>
-                        </div>
-                </a>            
-                <!-- <span class="helper"></span>
-                <img src="{{experience.companyUrl}}" style="height:10rem;width:10rem;max-width: 100%;"  > -->
-        </div>
+            <img class="grow" src="{{experience.companyUrl}}" style="height:10rem;width:10rem;max-width: 100%;"  >
+        </div> 
         <div class="col-md-3 details " > 
             <p> <b>{{experience.company}}</b></p> 
         </div> 
-        <div class="col-md-2 details"><b>{{experience.position}}</b></div>
-        <div class="details col-md-3" > <b>{{experience.duration}} </b>
+        <div class="col-md-2 details "><b>{{experience.position}}</b></div>
+        <div class="details col-md-3 " > <b>{{experience.duration}} </b>
         </div>
-        <div class="details col-md-1" > <b>{{experience.country}}</b><img src="{{experience.countryUrl}}" class="country" > 
+        <div class="details col-md-1 " > <b>{{experience.country}}</b><img src="{{experience.countryUrl}}" class="country" > 
         </div>
-         <div class="col-md-1 details">
+         <div class="col-md-1 details ">
           <a class="" routerLink="/experienceDetail/{{experience.id}}"><i class="fa fa-info-circle fa-2x"></i><span>Details</span></a>
         </div> 
     </div>
-  
+</div>

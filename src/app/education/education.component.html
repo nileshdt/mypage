@@ -1,17 +1,21 @@
-<div class="row" *ngFor="let ed of educations">
-    <!-- <div class="col-md-3 companylogo" [ngStyle]="{'background-image': 'url(' +experience.companyUrl+')'}">
-    </div> -->
-<div class="col-md-2 companylogo" >
-    <span class="helper"></span>
-    <img src="{{ed.url}}" style="height:10rem;width:10rem;max-width: 100%;"  >
-</div>
-<div class="col-md-3 details" > 
-    <p> <b>{{ed.university}}</b></p> 
-</div> 
-<div class="col-md-2 details"><b>{{ed.course}}</b></div>
-<div class="details col-md-3" > <b>{{ed.subject}} </b>
-</div>
- <div class="col-md-2 details">
-  <a class="" [routerLink]="['/printViewer/','/assets/pdf/wes.pdf']" ><i class="fa fa-info-circle fa-2x"></i><span>{{ed.detailCaption}}</span></a>
-</div> 
+<div class="education pad-top-10 " >
+    <h1>Education</h1>
+    <div class="row" *ngFor="let ed of educations">
+        <!-- <div class="col-md-3 companylogo" [ngStyle]="{'background-image': 'url(' +experience.companyUrl+')'}">
+        </div> -->
+        <div class="col-md-2 companylogo" >
+            <span class="helper"></span>
+            <img src="{{ed.url}}" style="height:10rem;width:10rem;max-width: 100%;"  >
+        </div>
+        <div class="col-md-3 details" > 
+            <p> <b>{{ed.university}}</b></p> 
+        </div> 
+        <div class="col-md-2 details"><b>{{ed.course}}</b>
+        </div>
+        <div class="details col-md-3" > <b>{{ed.subject}} </b>
+        </div>
+        <div class="col-md-2 details">
+            <a class="" [routerLink]="['/printViewer/','/assets/pdf/wes.pdf']" ><i class="fa fa-info-circle fa-2x"></i><span>{{ed.detailCaption}}</span></a>
+        </div> 
+    </div>
 </div>
